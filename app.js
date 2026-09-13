@@ -29,15 +29,15 @@ const units=[
  {t:'On the right track',lf:'Participle clauses · verb patterns',v:'Health and fitness · multi-word verbs',i:'Sports',exam:'RUE 1, 3, 4, 5 · letter/report · Listening 3 · Speaking 1/3',chunks:['push oneself too far','show signs of fatigue','make a full recovery','having taken into account','viewed in isolation'],focus:'Comprimir información sin crear participios ambiguos y controlar los patrones verbales.',res:[['Health','https://www.ted.com/topics/health'],['Participle clauses','https://dictionary.cambridge.org/grammar/british-grammar/participle-clauses']]}
 ];
 const resources=[
- ['OFICIAL','Currículo C2 · Región de Murcia','Ordenación, objetivos, competencias, contenidos y evaluación del nivel.','https://noticias.juridicas.com/base_datos/CCAA/670181-d-54-2020-de-2-jul-ca-murcia-ordenacion-de-las-ensenanzas-de-idiomas-de-regimen.html'],
- ['OFICIAL','Modelos C2 de Murcia','Archivo de pruebas publicadas y práctica por destrezas.','https://eoienglish.es/index.php/contenidos/c2/modelos-examen-c2'],
+ ['MARCO','Nivel C2 · Consejo de Europa','Descriptores y escalas del Marco Común Europeo de Referencia.','https://www.coe.int/en/web/common-european-framework-reference-languages/level-descriptions'],
+ ['PRÁCTICA','Cambridge C2 Proficiency','Ejemplos y materiales de preparación del nivel C2.','https://www.cambridgeenglish.org/exams-and-tests/proficiency/preparation/'],
  ['LÉXICO','Cambridge Dictionary','Definiciones, registro, colocaciones, IPA y audio UK/US.','https://dictionary.cambridge.org/'],
  ['PRONUNCIACIÓN','YouGlish','Chunks pronunciados en múltiples contextos reales.','https://youglish.com/'],
  ['LISTENING','BBC Sounds','Podcasts, entrevistas, documentales y registros variados.','https://www.bbc.co.uk/sounds'],
  ['INPUT + TRANSCRIPT','TED Talks','Charlas temáticas con subtítulos y transcripción interactiva.','https://www.ted.com/talks'],
  ['WRITING','Write & Improve','Práctica de escritura y ciclos de revisión.','https://writeandimprove.com/'],
  ['CORPUS','SKELL','Ejemplos, colocaciones y concordancias en contexto.','https://skell.sketchengine.eu/'],
- ['CERTIFICACIÓN','Normativa Murcia 2025–26','Marco vigente de matrícula y certificación C2 en la Región de Murcia.','https://www.borm.es/services/anuncio/840845/pdf']
+ ['DESCRIPTORES','CEFR Companion Volume','Escalas ampliadas de comprensión, producción, interacción y mediación.','https://www.coe.int/en/web/common-european-framework-reference-languages/cefr-descriptors']
 ];
 skillGrid.innerHTML=skills.map((s,i)=>`<article class="skill-card"><span class="num">0${i+1}</span><h3>${s.t}</h3><p>${s.d}</p><ul>${s.x.map(x=>`<li>${x}</li>`).join('')}</ul><a href="${s.r}" target="_blank" rel="noopener">Recurso ↗</a></article>`).join('');
 syllabusGrid.innerHTML=syllabus.map(s=>`<article class="syllabus-card"><h3>${s[0]}</h3><ul>${s[1].map(x=>`<li>${x}</li>`).join('')}</ul></article>`).join('');
